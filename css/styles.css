@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+/* Defining Colors */
+:root {
+	--primary-orange: #ed563b;
+	--headings-black: #232d39;
+	--paragraphs-gray: #5a5a5a;
+	--shadow-gray: #d2d2d2;
+}
+
+/* Generic properties */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+
+body {
+	background: #f2f2f2;
+}
+
+/* Colors */
+h1,
+h2,
+h3 {
+	color: var(--headings-black);
+}
+
+p {
+	color: var(--paragraphs-gray);
+	font-size: 1.6rem;
+}
+
+span {
+	color: var(--primary-orange);
+}
+
+a {
+	text-decoration: none;
+}
+
+/* H2 headings */
+h2 {
+	text-align: center;
+	font-size: 2.7rem;
+}
+
+/* Margin for each section */
+.about,
+.motivation,
+.classes {
+	padding: 10rem 0;
+}
+
+/* Call to action buttons */
+.cta-button {
+	background: var(--primary-orange);
+	width: 17rem;
+	margin: 2rem auto 0 auto;
+	padding: 1rem;
+	text-align: center;
+	cursor: pointer;
+}
+.cta-button a {
+	color: white;
+	font-size: 1.4rem;
+}
+
+/* Squiggly image divider */
+.squiggly-lines {
+	width: 5rem;
+	margin: 1.5rem auto;
+}
+.squiggly-lines img {
+	width: 5rem;
+	margin: auto;
+}
+
+/* Navbar */
+.navbar .container {
+	background: #f2f2f2;
+	position: fixed;
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 3rem;
+	width: 100%;
+	box-shadow: 0px 1px 10px var(--shadow-gray);
+}
+.navbar .container h1 {
+	font-size: 3rem;
+	font-weight: 800;
+	margin-left: 3rem;
+}
+.navbar .container nav {
+	display: none;
+}
+.navbar .container img {
+	width: 3rem;
+	cursor: pointer;
+}
+
+/* Hero section */
+section.hero {
+	height: 100vh;
+	background-image: url(../images/weight_lifter_hero.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+section.hero h1 {
+	color: white;
+	font-size: 7rem;
+	line-height: 1.2;
+	margin-top: 2rem;
+}
+section.hero h2 {
+	color: white;
+	font-size: 2.5rem;
+	font-weight: 800;
+}
+
+/* About section */
+section.about {
+	margin: 0rem 1rem;
+}
+section.about h2 {
+	text-align: center;
+	font-size: 2.7rem;
+}
+section.about h3 {
+	font-size: 1.8rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	margin-top: -0.5rem;
+}
+section.about h4 {
+	color: var(--primary-orange);
+	font-size: 1.3rem;
+	font-weight: 500;
+	margin-top: 1rem;
+}
+section.about .intro-paragraph {
+	text-align: center;
+	margin: 0rem 6rem;
+}
+section.about .activities {
+	margin-top: 7rem;
+}
+section.about .activities .block {
+	display: flex;
+	justify-content: space-between;
+	margin: 2rem 2rem;
+}
+section.about .activities .activity {
+	margin-left: 3rem;
+}
+
+/* Motivation section */
+section.motivation {
+	background-image: url(../images/treadmills-motivation.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+}
+section.motivation h2 {
+	color: white;
+	font-size: 3.8rem;
+	font-weight: 800;
+	margin: 2rem 8rem;
+	line-height: 1.2;
+}
+section.motivation p {
+	color: white;
+	margin: 4rem 10rem;
+}
+
+/* Classes section */
+section.classes {
+	margin: 0rem 3rem;
+}
+section.classes .intro-paragraph {
+	text-align: center;
+	margin: 0rem 8rem;
+}
+section.classes .layout {
+	margin-top: 3rem;
+}
+section.classes .layout .session-number {
+	width: 80%;
+	margin: 3rem auto;
+	box-shadow: 0px 0px 10px var(--shadow-gray);
+	border-radius: 0.5rem;
+}
+section.classes .layout .session-number h3 {
+	font-size: 2rem;
+	font-weight: 600;
+	padding: 2rem 2rem 2rem 8rem;
+}
+section.classes .layout .session-number h3:before {
+	content: '';
+	position: absolute;
+	width: 3.5rem;
+	height: 3.5rem;
+	background-image: url(../images/weights-orange.png);
+	background-size: contain;
+	margin-left: -5.5rem;
+	margin-top: -0.3rem;
+}
+section.classes .view-schedules {
+	background-color: var(--primary-orange);
+	width: 80%;
+	margin: auto;
+	color: white;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 600;
+	padding: 2rem 0rem;
+	border-radius: 0.5rem;
+}
+section.classes .class-details {
+	margin: 3rem auto;
+	width: 80%;
+}
+section.classes .class-details h2 {
+	text-align: left;
+	margin: 2rem 0rem;
+}
+section.classes .class-details .deadlifter img {
+	width: 100%;
+	border-radius: 0.5rem;
+}
+section.classes .class-details a {
+	color: white;
+}
+section.classes .class-details .cta-button {
+	margin: 2rem 0rem;
+}
+
+@media only screen and (min-width: 990px) {
+	.navbar .container img {
+		display: none;
+	}
+	.navbar .container nav {
+		display: block;
+		margin-right: 2rem;
+		width: 55%;
+	}
+	.navbar .container nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+	.navbar .container nav ul li {
+		list-style: none;
+		padding: 1rem 0rem;
+		font-size: 1.5rem;
+		font-weight: 500;
+		color: var(--headings-black);
+	}
+	.navbar .container nav ul li.sign-up {
+		background: var(--primary-orange);
+		padding: 1rem 1rem;
+		color: white;
+	}
+	section.about .activities {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	section.classes .layout {
+		display: flex;
+	}
+	section.classes .sessions {
+		width: 60%;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	section.about,
+	section.classes,
+	section.motivation .container {
+		margin: 0rem 10rem;
+	}
+	.navbar .container h1 {
+		margin-left: 9rem;
+	}
+	.navbar .container nav {
+		margin-right: 9rem;
+	}
+} /*# sourceMappingURL=styles.css.map */
